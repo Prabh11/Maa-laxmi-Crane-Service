@@ -1,0 +1,45 @@
+.intro-widget{
+    // position: relative;
+    text-align: center;
+    .intro-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include md{
+            width: 90%;
+            top: 40%;
+        }
+        h2{
+            color: $white;
+            font-size: 3rem;
+            padding-bottom: 10px;
+            @include md{
+                font-size: 1.9rem;
+            }
+        }
+        p{
+            color: $light-grey;
+            font-size: 1rem;
+            line-height: 2rem;
+            @include md{
+                font-size: 1rem;
+                line-height: 1.5rem;
+            }
+
+        }
+    }
+}   .btn-contact{
+    font-size: 2.6rem;
+    button{
+        border: none;
+        border-radius: 5px;
+        padding: 10px 25px;
+        background-color: $brand-primary;
+        color: $white;
+    }
+    button:hover{
+        background-color: rgb(31, 31, 31);
+        
+    }
+}

@@ -1,0 +1,15 @@
+#brand-widget{
+    .brand-images{
+        justify-content: center;
+        align-items: center;
+        background: $brand-primary;
+        padding: 0px 67px;
+        scale: 1;
+        display: flex;
+        padding: 5px 190px;
+       
+        @include md{
+            padding: 7px 7px;
+        }
+    }
+}

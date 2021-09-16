@@ -1,0 +1,133 @@
+.footer-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    color: #a1a1a2;
+    background-color: #20222d;
+
+    .footer-details-contant {
+        width: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        line-height: 1.7rem;
+        margin-bottom: 20px;
+        @include md{
+            width: 95%;
+        }
+
+        .footer-aboutus {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            @include md {
+                width: auto;
+            }
+
+            .aboutus-contant {
+                display: flex;
+                flex-direction: column;
+                color: #a1a1a2;
+                
+                .about-title {
+                    font-size: 1.5rem;
+                    color:$white;
+                    margin: 20px 34px 20px 0px;
+                    @include md {
+                        text-align: center;
+                    }
+                }
+            }
+            .aboutus-address {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+                .address {
+                    margin: 10px 0px 10px 0px;
+                    i {
+                        background-color: $brand-primary;
+                        text-align: center;
+                        font-size: 19px;
+                        color:$white;
+                        width: 30px;
+                        line-height: 30px;
+                        border-radius: 5px;
+                        margin-right: 7px;
+                    }
+                }
+                .whatsappno {
+                    i {
+                        background-color: $brand-primary;
+                        text-align: center;
+                        font-size: 19px;
+                        color:$white;
+                        width: 30px;
+                        line-height: 30px;
+                        border-radius: 5px;
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+        .footer-form {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            .form-title {
+                font-size: 1.5rem;
+                color:$white;
+                margin: 20px 34px 20px 0px;
+                margin: 20px 34px 20px 0px;
+            }
+            form {
+                input {
+                    border: none;
+                    padding: 10px;
+                    margin: 4px auto;
+                    border-radius: 3px;
+                    color:$white;
+                    background: #282c37;
+                    border: 1px solid #424346;
+                }
+                .form-Message{
+                   #input-message{
+                    background: #282c37;
+                    border: navajowhite;
+                    border-radius: 3px;
+                    border: 1px solid #424346;
+                    color:$white;
+                    padding: 11px;
+                    min-width: 100%;
+                    min-height: 159px;
+                   }
+                }
+                .send {
+                    border: none;
+                    padding: 10px;
+                    display: block;
+                    margin: auto;
+                    margin-top: auto;
+                    margin-top: auto;
+                    width: 100%;
+                    text-transform: uppercase;
+                    margin-top: 5px;
+                    border-radius: 3px;
+                    background: $brand-primary;
+                    color:$white;
+                }
+            }
+        }
+    }
+}
+
+.footer-credit {
+    background-color: #181b24;
+    color: $white;
+
+    display: flex;
+    align-items: center;
+    padding: 11px 0px;
+    justify-content: center;
+}

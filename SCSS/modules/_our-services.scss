@@ -1,0 +1,120 @@
+.service-section{
+    .rows{
+        .auther-content{
+            .auther-title {
+                text-align: center;
+                font-size: 2rem;
+                margin: 40px 0PX;
+            }
+        }
+    }
+    .service-widget{
+        margin: 10px auto;
+        width: 80%;
+        display: flex;
+        @include md{
+            width: 100%;
+            display: block;
+        }
+      
+
+        .service-widget-left{
+            .service-content{
+                margin: 0px 17px;
+                margin-bottom: 45px;
+                .service-icon{
+                    float: right;
+                    width: 65px;
+                    height: 100%;
+                    text-align: center;
+                    border-radius: 100%;
+                    overflow: hidden;
+                        i{
+                        position: relative;
+                        top: -16px;
+                        font-size: 30px;
+                        color: $brand-primary;
+                        line-height: 70px;
+                        font-weight: 400;
+                        font-style: normal;
+                    }
+                }
+                .service-content-details{
+                    .service-title{
+                        text-align: right;
+                        padding-bottom: 15px;
+                        text-transform: uppercase;
+                    }
+                    .service-snippet{
+                        text-align: right;
+                        color: $dark-grey;
+                    }
+                }
+            }
+
+        }
+        .service-image-center{
+            position: relative;
+            float: left;
+            width: 100%;
+            height: 400px;
+            box-sizing: border-box;
+            padding: 0 10px;
+            @include md{
+                display: none;
+            }
+            
+            .service-img{
+                background: url("/assets/Our-service-center-image.png");
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat;
+                /* background-size: cover; */
+                /* margin: 0; */
+    
+            }
+        }
+        .service-widget-right{
+            .service-content{
+                margin: 0px 17px;
+                margin-bottom: 45px;
+                // @include md {
+                //     display: flex;
+                //     flex-direction: column;
+                // }
+                .service-icon{
+                    float: left;
+                    // display: inline-block;
+                    width: 65px;
+                    height: 100%;
+                    text-align: center;
+                    border-radius: 100%;
+                    overflow: hidden;
+                   i{
+                    position: relative;
+                    top: -16px;
+                    font-size: 30px;
+                    color: $brand-primary;
+                    line-height: 70px;
+                    font-weight: 400;
+                    font-style: normal;
+                   }
+                }
+                .service-content-details{
+                    .service-title{
+                        text-align: left;
+                        padding-bottom: 15px;
+                        text-transform: uppercase;
+                    }
+                    .service-snippet{
+                        text-align: left;
+                        color: $dark-grey;
+                    }
+                }
+            }
+        }
+    
+    }
+}

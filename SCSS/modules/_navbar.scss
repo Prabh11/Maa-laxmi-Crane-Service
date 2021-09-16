@@ -1,0 +1,85 @@
+header {
+    // height: 100vh;
+    height: 710px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)), url("/assets/Welcome-Intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include md {
+        height: 500px;
+        width: 100%;
+    }
+    nav {
+        padding: 1% 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // md screen
+        @include md {
+            flex-direction: column;
+            justify-content: flex-start;
+            .showmenu {
+                // display: block;
+                background-color:$white;
+                z-index: 50;
+            }
+        }
+
+        .brand-logo {
+            @include md {
+                margin-left: -35px;
+            }
+            h1 {
+                font-size: 3.2rem;
+                color: $brand-primary;
+                margin: 0;
+                visibility: hidden;
+            }
+            
+        }
+        ul {
+            list-style: none;
+
+            @include md {
+                display: none;
+                background-color: $white;
+                padding: 0% 40%;
+            }
+
+            li {
+                display: inline-block;
+                margin-left: 2.5rem;
+
+                @include md {
+                    padding: 14% 0;
+                    display: block;
+                }
+                a {
+                    color: $grey;
+                   
+
+                    @include md {
+                        color: black;
+                    }
+                }
+            }
+            a:hover {
+                color: $brand-primary;
+                transition: 0.2s ease-in-out;
+            }
+        }
+        box-icon {
+            display: none;
+            @include md {
+                display: block;
+                position: absolute;
+                top: 12px;
+                right: 9px;
+            }
+        }
+    }
+}
+.showmenu {
+    display: block;
+}
